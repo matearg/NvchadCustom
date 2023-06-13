@@ -28,3 +28,17 @@ lspconfig.html.setup({
   capabilities = capabilities,
   filetypes = {"html"},
 })
+
+lspconfig.lua_ls.setup({
+  on_attach = on_attach,
+  capabilities = capabilities,
+  filetypes = {"lua"},
+  settings = {
+    Lua = {
+
+      diagnostics = {
+        globals = {'vim'}
+      }
+    }
+  }
+})
