@@ -1,44 +1,44 @@
-local config = require("plugins.configs.lspconfig")
+local config = require "plugins.configs.lspconfig"
 
 local on_attach = config.on_attach
 local capabilities = config.capabilities
 
-local lspconfig = require("lspconfig")
+local lspconfig = require "lspconfig"
 
-lspconfig.pyright.setup({
+lspconfig.pyright.setup {
   on_attach = on_attach,
   capabilities = capabilities,
-  filetypes = {"python"},
-})
+  filetypes = { "python" },
+}
 
-lspconfig.clangd.setup({
+lspconfig.clangd.setup {
   on_attach = on_attach,
   capabilities = capabilities,
-  filetypes = {"c", "cpp"},
-})
+  filetypes = { "c", "cpp" },
+}
 
-lspconfig.tsserver.setup({
+lspconfig.tsserver.setup {
   on_attach = on_attach,
   capabilities = capabilities,
-  filetypes = {"js"},
-})
+  filetypes = { "js" },
+}
 
-lspconfig.html.setup({
+lspconfig.html.setup {
   on_attach = on_attach,
   capabilities = capabilities,
-  filetypes = {"html"},
-})
+  filetypes = { "html" },
+}
 
-lspconfig.lua_ls.setup({
+lspconfig.lua_ls.setup {
   on_attach = on_attach,
   capabilities = capabilities,
-  filetypes = {"lua"},
+  filetypes = { "lua" },
   settings = {
     Lua = {
 
       diagnostics = {
-        globals = {'vim'}
-      }
-    }
-  }
-})
+        globals = { "vim" },
+      },
+    },
+  },
+}

@@ -12,19 +12,19 @@ M.nvimtree = {
 
 M.general = {
   n = {
-    ["<S-h>"] = {"<cmd>bprevious<CR>"},
-    ["<S-l>"] = {"<cmd>bnext<CR>"}
+    ["<S-h>"] = { "<cmd>bprevious<CR>" },
+    ["<S-l>"] = { "<cmd>bnext<CR>" },
   },
   i = {
-    ["jk"] = {"<ESC>"},
-  }
+    ["jk"] = { "<ESC>" },
+  },
 }
 
 M.dap = {
   plugin = true,
   n = {
-    ["<leader>db"] = {"<cmd> DapToggleBreakpoint <CR>"}
-  }
+    ["<leader>db"] = { "<cmd> DapToggleBreakpoint <CR>" },
+  },
 }
 
 M.dap_python = {
@@ -32,10 +32,10 @@ M.dap_python = {
   n = {
     ["<leader>dpr"] = {
       function()
-        require('dap-python').test_method()
-      end
-    }
-  }
+        require("dap-python").test_method()
+      end,
+    },
+  },
 }
 
 return M
