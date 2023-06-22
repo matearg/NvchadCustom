@@ -31,5 +31,13 @@ local plugins = {
       require "custom.configs.lspconfig"
     end,
   },
+  {
+    "nvim-tree/nvim-tree.lua",
+    opts = {
+      view = {
+        side = "right",
+      },
+    },
+  },
 }
 return plugins
