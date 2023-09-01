@@ -1,8 +1,9 @@
 local M = {}
 
 M.ui = {
-  theme = "gruvbox",
+  theme = "catppuccin",
   transparency = true,
+  lsp_semantic_tokens = true,
   statusline = {
     theme = "vscode",
   },
